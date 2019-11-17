@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "K64LanToIoApp", "K64LanToIoApp\K64LanToIoApp.csproj", "{4627722E-D409-444B-8F54-028B67097AD7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LedBulb", "K64LanToIoApp\LedBulb\LedBulb.csproj", "{996D0FCD-6A40-4873-AA20-C80A047A2BEF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToggleSwitch", "K64LanToIoApp\ToggleSwitch\ToggleSwitch\ToggleSwitch.csproj", "{49B88FFA-F02C-4709-BA65-9F8996444ECD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "K64LanToIoApi", "K64LanToIoApi\K64LanToIoApi.csproj", "{5BCD916A-E8ED-4A90-9F29-74D02101B767}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4627722E-D409-444B-8F54-028B67097AD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4627722E-D409-444B-8F54-028B67097AD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4627722E-D409-444B-8F54-028B67097AD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4627722E-D409-444B-8F54-028B67097AD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{996D0FCD-6A40-4873-AA20-C80A047A2BEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{996D0FCD-6A40-4873-AA20-C80A047A2BEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{996D0FCD-6A40-4873-AA20-C80A047A2BEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{996D0FCD-6A40-4873-AA20-C80A047A2BEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49B88FFA-F02C-4709-BA65-9F8996444ECD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49B88FFA-F02C-4709-BA65-9F8996444ECD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49B88FFA-F02C-4709-BA65-9F8996444ECD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49B88FFA-F02C-4709-BA65-9F8996444ECD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BCD916A-E8ED-4A90-9F29-74D02101B767}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BCD916A-E8ED-4A90-9F29-74D02101B767}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BCD916A-E8ED-4A90-9F29-74D02101B767}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BCD916A-E8ED-4A90-9F29-74D02101B767}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {00CB416E-9216-4CC2-B5F3-3D405DAAFCAC}
+	EndGlobalSection
+EndGlobal
