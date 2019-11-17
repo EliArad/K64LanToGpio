@@ -170,6 +170,90 @@ void WriteGPIOByName(IOs  ios, uint8_t onoff)
 		case PTC3:
 			GPIO_WritePinOutput(GPIOC, 3, onoff);
 		break;
+		// J2
+		case PTA4:
+			GPIO_WritePinOutput(GPIOA, 4, onoff);
+		break;
+		case PTC4:
+			GPIO_WritePinOutput(GPIOC, 4, onoff);
+		break;
+		case PTD0:
+			GPIO_WritePinOutput(GPIOD, 0, onoff);
+		break;
+		case PTD2:
+			GPIO_WritePinOutput(GPIOD, 2, onoff);
+		break;
+		case PTD3:
+			GPIO_WritePinOutput(GPIOD, 3, onoff);
+		break;
+		case PTD1:
+			GPIO_WritePinOutput(GPIOD, 1, onoff);
+		break;
+		case PTE25:
+			GPIO_WritePinOutput(GPIOE, 25, onoff);
+		break;
+		case PTE24:
+			GPIO_WritePinOutput(GPIOE, 24, onoff);
+		break;
+		case PTC6:
+			GPIO_WritePinOutput(GPIOC, 6, onoff);
+			break;
+		case PTC13:
+			GPIO_WritePinOutput(GPIOC, 13, onoff);
+			break;
+		case PTE5:
+			GPIO_WritePinOutput(GPIOE, 5, onoff);
+			break;
+		case PTE4:
+			GPIO_WritePinOutput(GPIOE, 4, onoff);
+			break;
+		case PTE3:
+			GPIO_WritePinOutput(GPIOE, 3, onoff);
+			break;
+		case PTE2:
+			GPIO_WritePinOutput(GPIOE, 2, onoff);
+			break;
+		case PTE1:
+			GPIO_WritePinOutput(GPIOE, 1, onoff);
+			break;
+		case PTE0:
+			GPIO_WritePinOutput(GPIOE, 0, onoff);
+			break;
+		case PTE6:
+			GPIO_WritePinOutput(GPIOE, 6, onoff);
+	    break;
+	    //
+		case PTA0:
+			GPIO_WritePinOutput(GPIOA, 0, onoff);
+			break;
+		case PTA3:
+			GPIO_WritePinOutput(GPIOA, 3, onoff);
+			break;
+		case PTA5:
+			GPIO_WritePinOutput(GPIOA, 5, onoff);
+			break;
+		case PTA12:
+			GPIO_WritePinOutput(GPIOA, 12, onoff);
+			break;
+		case PTA13:
+			GPIO_WritePinOutput(GPIOA, 13, onoff);
+			break;
+		case PTA14:
+			GPIO_WritePinOutput(GPIOA, 14, onoff);
+			break;
+		case PTA15:
+			GPIO_WritePinOutput(GPIOA, 15, onoff);
+			break;
+		case PTA16:
+			GPIO_WritePinOutput(GPIOA, 16, onoff);
+			break;
+		case PTA17:
+			GPIO_WritePinOutput(GPIOA, 17, onoff);
+			break;
+
+
+
+
 	}
 }
 
@@ -237,9 +321,65 @@ int main(void)
 	PORT_SetPinMux(PORTA, 2, kPORT_MuxAsGpio);
 	PORT_SetPinMux(PORTC, 2, kPORT_MuxAsGpio);
 	PORT_SetPinMux(PORTC, 3, kPORT_MuxAsGpio);
+	// J2
+	PORT_SetPinMux(PORTA, 4, kPORT_MuxAsGpio);
+	PORT_SetPinMux(PORTC, 4, kPORT_MuxAsGpio);
+	PORT_SetPinMux(PORTD, 0, kPORT_MuxAsGpio);
+	PORT_SetPinMux(PORTD, 2, kPORT_MuxAsGpio);
+	PORT_SetPinMux(PORTD, 3, kPORT_MuxAsGpio);
+	PORT_SetPinMux(PORTD, 1, kPORT_MuxAsGpio);
+	PORT_SetPinMux(PORTE, 25, kPORT_MuxAsGpio);
+	PORT_SetPinMux(PORTE, 24, kPORT_MuxAsGpio);
+    // J4
+	PORT_SetPinMux(PORTB, 2, kPORT_MuxAsGpio);
+	PORT_SetPinMux(PORTB, 3, kPORT_MuxAsGpio);
+	PORT_SetPinMux(PORTB, 10, kPORT_MuxAsGpio);
+	PORT_SetPinMux(PORTB, 11, kPORT_MuxAsGpio);
+	PORT_SetPinMux(PORTC, 11, kPORT_MuxAsGpio);
+	PORT_SetPinMux(PORTC, 10, kPORT_MuxAsGpio);
+	PORT_SetPinMux(PORTB, 20, kPORT_MuxAsGpio);
+	//J6
+	PORT_SetPinMux(PORTC, 12, kPORT_MuxAsGpio);
+	PORT_SetPinMux(PORTD, 5, kPORT_MuxAsGpio);
+	PORT_SetPinMux(PORTD, 7, kPORT_MuxAsGpio);
+	PORT_SetPinMux(PORTD, 4, kPORT_MuxAsGpio);
+	PORT_SetPinMux(PORTD, 6, kPORT_MuxAsGpio);
+	PORT_SetPinMux(PORTC, 18, kPORT_MuxAsGpio);
+
+	//
+	PORT_SetPinMux(PORTC, 6, kPORT_MuxAsGpio);
+	PORT_SetPinMux(PORTC, 13, kPORT_MuxAsGpio);
+	PORT_SetPinMux(PORTE, 5, kPORT_MuxAsGpio);
+	PORT_SetPinMux(PORTE, 4, kPORT_MuxAsGpio);
+	PORT_SetPinMux(PORTE, 3, kPORT_MuxAsGpio);
+	PORT_SetPinMux(PORTE, 1, kPORT_MuxAsGpio);
+	PORT_SetPinMux(PORTE, 1, kPORT_MuxAsGpio);
+	PORT_SetPinMux(PORTE, 0, kPORT_MuxAsGpio);
+	PORT_SetPinMux(PORTE, 6, kPORT_MuxAsGpio);
+	//
+	PORT_SetPinMux(PORTC, 14, kPORT_MuxAsGpio);
+	PORT_SetPinMux(PORTC, 15, kPORT_MuxAsGpio);
+	//
+
+	PORT_SetPinMux(PORTA, 0, kPORT_MuxAsGpio);
+	PORT_SetPinMux(PORTA, 1, kPORT_MuxAsGpio);
+	PORT_SetPinMux(PORTA, 2, kPORT_MuxAsGpio);
+	PORT_SetPinMux(PORTA, 3, kPORT_MuxAsGpio);
+	PORT_SetPinMux(PORTA, 4, kPORT_MuxAsGpio);
+	PORT_SetPinMux(PORTA, 5, kPORT_MuxAsGpio);
+
+	PORT_SetPinMux(PORTA, 12, kPORT_MuxAsGpio);
+	PORT_SetPinMux(PORTA, 13, kPORT_MuxAsGpio);
+	PORT_SetPinMux(PORTA, 14, kPORT_MuxAsGpio);
+	PORT_SetPinMux(PORTA, 15, kPORT_MuxAsGpio);
+	PORT_SetPinMux(PORTA, 16, kPORT_MuxAsGpio);
+	PORT_SetPinMux(PORTA, 17, kPORT_MuxAsGpio);
+
+
 
 	/* Init output LED GPIO. */
 	GPIO_PinInit(GPIOB, 22, &led_config);
+	// J1
 	GPIO_PinInit(GPIOB, 18, &led_config);
 	GPIO_PinInit(GPIOB, 19, &led_config);
 	GPIO_PinInit(GPIOC, 1, &led_config);
@@ -256,6 +396,66 @@ int main(void)
 	GPIO_PinInit(GPIOA, 2, &led_config);
 	GPIO_PinInit(GPIOC, 2, &led_config);
 	GPIO_PinInit(GPIOC, 3, &led_config);
+	// J2
+	GPIO_PinInit(GPIOA, 4, &led_config);
+	GPIO_PinInit(GPIOC, 4, &led_config);
+	GPIO_PinInit(GPIOD, 0, &led_config);
+	GPIO_PinInit(GPIOD, 2, &led_config);
+	GPIO_PinInit(GPIOD, 3, &led_config);
+	GPIO_PinInit(GPIOD, 1, &led_config);
+	GPIO_PinInit(GPIOE, 25, &led_config);
+	GPIO_PinInit(GPIOE, 24, &led_config);
+    // J4
+	GPIO_PinInit(GPIOB, 2, &led_config);
+	GPIO_PinInit(GPIOB, 3, &led_config);
+	GPIO_PinInit(GPIOB, 10, &led_config);
+	GPIO_PinInit(GPIOB, 11, &led_config);
+	GPIO_PinInit(GPIOC, 11, &led_config);
+	GPIO_PinInit(GPIOC, 10, &led_config);
+	GPIO_PinInit(GPIOB, 20, &led_config);
+	//J6
+	GPIO_PinInit(GPIOC, 12, &led_config);
+	GPIO_PinInit(GPIOD, 5, &led_config);
+	GPIO_PinInit(GPIOD, 7, &led_config);
+	GPIO_PinInit(GPIOD, 4, &led_config);
+	GPIO_PinInit(GPIOD, 6, &led_config);
+	GPIO_PinInit(GPIOC, 18, &led_config);
+	//
+
+	GPIO_PinInit(GPIOC, 6, &led_config);
+	GPIO_PinInit(GPIOC, 13, &led_config);
+
+	GPIO_PinInit(GPIOE, 5, &led_config);
+	GPIO_PinInit(GPIOE, 4, &led_config);
+	GPIO_PinInit(GPIOE, 3, &led_config);
+
+	GPIO_PinInit(GPIOE, 1, &led_config);
+	GPIO_PinInit(GPIOE, 1, &led_config);
+	GPIO_PinInit(GPIOE, 0, &led_config);
+	GPIO_PinInit(GPIOE, 6, &led_config);
+	//
+
+	GPIO_PinInit(GPIOC, 14, &led_config);
+	GPIO_PinInit(GPIOC, 15, &led_config);
+	//
+	GPIO_PinInit(GPIOA, 0, GPIO_PinInit);
+	GPIO_PinInit(GPIOC, 1, GPIO_PinInit);
+	GPIO_PinInit(GPIOC, 2, GPIO_PinInit);
+	GPIO_PinInit(GPIOC, 3, GPIO_PinInit);
+	GPIO_PinInit(GPIOC, 4, GPIO_PinInit);
+	GPIO_PinInit(GPIOC, 5, GPIO_PinInit);
+
+	GPIO_PinInit(GPIOC, 12, GPIO_PinInit);
+	GPIO_PinInit(GPIOC, 13, GPIO_PinInit);
+	GPIO_PinInit(GPIOC, 14, GPIO_PinInit);
+	GPIO_PinInit(GPIOC, 15, GPIO_PinInit);
+	GPIO_PinInit(GPIOC, 16, GPIO_PinInit);
+	GPIO_PinInit(GPIOC, 17, GPIO_PinInit);
+
+
+
+
+
 
 	GPIO_WritePinOutput(GPIOB,22, 1);
 

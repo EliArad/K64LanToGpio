@@ -30,7 +30,64 @@ namespace K64LanToIoApi
         PTB23,
         PTA2,
         PTC2,
-        PTC3
+        PTC3,
+        // J2
+        PTA4,
+        PTC4,
+        PTD0,
+        PTD2,
+        PTD3,
+        PTD1,
+        PTE25,
+        PTE24,
+        // J4
+        PTB2,
+        PTB3,
+        PTB10,
+        PTB11,
+        PTBC11,
+        PTBC10,
+        PTBC20,
+        //J6
+        PTC12,
+        PTD5,
+        PTD7,
+        PTD4,
+        PTD6,
+        PTC18,
+        PTC6,
+        PTC13,
+        //
+        PTE5,
+        PTE4,
+        PTE3,
+        PTE2,
+        PTE1,
+        PTE0,
+        PTE6,
+        // BLUETOOTH
+        PTC14,
+        PTC15,
+        //
+        PTA0,
+        PTA3,
+        PTA5,
+        PTA12,
+        PTA13,
+        PTA14,
+        PTA15,
+        PTA16,
+        PTA17,
+        //
+        PTB0,
+        PTB1,
+        PTB16,
+        PTB17,
+        PTB20,
+        PTB21,
+
+
+
 
     }
     public class K64LanToIo
