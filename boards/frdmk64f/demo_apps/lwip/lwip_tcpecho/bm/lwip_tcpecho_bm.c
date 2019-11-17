@@ -250,9 +250,68 @@ void WriteGPIOByName(IOs  ios, uint8_t onoff)
 		case PTA17:
 			GPIO_WritePinOutput(GPIOA, 17, onoff);
 			break;
+		case PTB0:
+		   GPIO_WritePinOutput(GPIOB, 0, onoff);
+		break;
+		case PTB1:
+		   GPIO_WritePinOutput(GPIOB, 1, onoff);
+		break;
+		case PTB16:
+		   GPIO_WritePinOutput(GPIOB, 16, onoff);
+		break;
+		case PTB17:
+		   GPIO_WritePinOutput(GPIOB, 17, onoff);
+		break;
+		case PTB21:
+		   GPIO_WritePinOutput(GPIOB, 21, onoff);
+		break;
 
+		case PTB10:
+		   GPIO_WritePinOutput(GPIOB, 10, onoff);
+		break;
+		case PTB11:
+		   GPIO_WritePinOutput(GPIOB, 11, onoff);
+		break;
+		case PTC10:
+			GPIO_WritePinOutput(GPIOC, 10, onoff);
+		break;
+		case PTC11:
+			GPIO_WritePinOutput(GPIOC, 11, onoff);
+		break;
+		case PTC12:
+			GPIO_WritePinOutput(GPIOC, 12, onoff);
+		break;
+		case PTC14:
+			GPIO_WritePinOutput(GPIOC, 14, onoff);
+		break;
+		case PTC15:
+			GPIO_WritePinOutput(GPIOC, 15, onoff);
+		break;
+		case PTC18:
+			GPIO_WritePinOutput(GPIOC, 18, onoff);
+		break;
+		case PTD4:
+			GPIO_WritePinOutput(GPIOD, 4, onoff);
+		break;
+		case PTD5:
+			GPIO_WritePinOutput(GPIOD, 5, onoff);
+		break;
+		case PTD6:
+			GPIO_WritePinOutput(GPIOD, 6, onoff);
+		break;
+		case PTD7:
+			GPIO_WritePinOutput(GPIOD, 7, onoff);
+		break;
 
-
+		case PTB2:
+			GPIO_WritePinOutput(GPIOB, 2, onoff);
+		break;
+		case PTB3:
+			GPIO_WritePinOutput(GPIOB, 3, onoff);
+		break;
+		case PTB20:
+			GPIO_WritePinOutput(GPIOB, 20, onoff);
+		break;
 
 	}
 }
@@ -374,6 +433,14 @@ int main(void)
 	PORT_SetPinMux(PORTA, 15, kPORT_MuxAsGpio);
 	PORT_SetPinMux(PORTA, 16, kPORT_MuxAsGpio);
 	PORT_SetPinMux(PORTA, 17, kPORT_MuxAsGpio);
+	//
+
+	PORT_SetPinMux(PORTB, 0, kPORT_MuxAsGpio);
+	PORT_SetPinMux(PORTB, 1, kPORT_MuxAsGpio);
+	PORT_SetPinMux(PORTB, 16, kPORT_MuxAsGpio);
+	PORT_SetPinMux(PORTB, 17, kPORT_MuxAsGpio);
+	PORT_SetPinMux(PORTB, 20, kPORT_MuxAsGpio);
+	PORT_SetPinMux(PORTB, 21, kPORT_MuxAsGpio);
 
 
 
@@ -438,21 +505,26 @@ int main(void)
 	GPIO_PinInit(GPIOC, 14, &led_config);
 	GPIO_PinInit(GPIOC, 15, &led_config);
 	//
-	GPIO_PinInit(GPIOA, 0, GPIO_PinInit);
-	GPIO_PinInit(GPIOC, 1, GPIO_PinInit);
-	GPIO_PinInit(GPIOC, 2, GPIO_PinInit);
-	GPIO_PinInit(GPIOC, 3, GPIO_PinInit);
-	GPIO_PinInit(GPIOC, 4, GPIO_PinInit);
-	GPIO_PinInit(GPIOC, 5, GPIO_PinInit);
+	GPIO_PinInit(GPIOA, 0, &led_config);
+	GPIO_PinInit(GPIOC, 1, &led_config);
+	GPIO_PinInit(GPIOC, 2, &led_config);
+	GPIO_PinInit(GPIOC, 3, &led_config);
+	GPIO_PinInit(GPIOC, 4, &led_config);
+	GPIO_PinInit(GPIOC, 5, &led_config);
 
-	GPIO_PinInit(GPIOC, 12, GPIO_PinInit);
-	GPIO_PinInit(GPIOC, 13, GPIO_PinInit);
-	GPIO_PinInit(GPIOC, 14, GPIO_PinInit);
-	GPIO_PinInit(GPIOC, 15, GPIO_PinInit);
-	GPIO_PinInit(GPIOC, 16, GPIO_PinInit);
-	GPIO_PinInit(GPIOC, 17, GPIO_PinInit);
+	GPIO_PinInit(GPIOC, 12, &led_config);
+	GPIO_PinInit(GPIOC, 13, &led_config);
+	GPIO_PinInit(GPIOC, 14, &led_config);
+	GPIO_PinInit(GPIOC, 15, &led_config);
+	GPIO_PinInit(GPIOC, 16, &led_config);
+	GPIO_PinInit(GPIOC, 17, &led_config);
+	//
 
-
+	GPIO_PinInit(GPIOB, 0, &led_config);
+	GPIO_PinInit(GPIOB, 1, &led_config);
+	GPIO_PinInit(GPIOB, 16, &led_config);
+	GPIO_PinInit(GPIOB, 17, &led_config);
+	GPIO_PinInit(GPIOB, 21, &led_config);
 
 
 

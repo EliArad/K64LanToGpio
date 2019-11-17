@@ -224,6 +224,12 @@ typedef enum IOs
 	PTA15,
 	PTA16,
 	PTA17,
+	//
+	PTB0,
+	PTB1,
+	PTB16,
+	PTB17,
+	PTB21,
 
 
 

@@ -83,7 +83,6 @@ namespace K64LanToIoApi
         PTB1,
         PTB16,
         PTB17,
-        PTB20,
         PTB21,
 
 
